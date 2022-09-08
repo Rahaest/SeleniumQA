@@ -27,7 +27,7 @@ public class ToolsQAPracticeFormPage {
     }
 
     public void fillInForm(String firstNameStr, String lastNameStr, String gender, String phoneNrStr){
-        driver.findElement(firstName).sendKeys(firstNameStr);
+        driver.findElement(this.firstName).sendKeys(firstNameStr);
         driver.findElement(this.lastName).sendKeys(lastNameStr);
         setGender(gender);
         driver.findElement(genderBtn).click();
