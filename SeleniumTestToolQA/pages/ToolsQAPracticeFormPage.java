@@ -12,18 +12,10 @@ public class ToolsQAPracticeFormPage {
     By genderBtn;
     By submitBtn = By.id("submit");
 
-    //Default values for input
-    String firstNameStr = "Test";
-    String lastNameStr = "Persoon";
-    String phoneNrStr= "0123456789";
-
     public ToolsQAPracticeFormPage(WebDriver driver){
         this.driver=driver;
     }
 
-//    public void setFirstName(String firstNameStr){this.firstNameStr = firstNameStr;}
-//    public void setLastName(String lastNameStr) {this.lastNameStr = lastNameStr;}
-//    public void setPhoneNr(String phoneNrStr) {this.phoneNrStr = phoneNrStr;}
     public void setGender(String gender) {
         if (gender.equalsIgnoreCase("male")) {
            genderBtn = By.xpath("//label[text()='Male']");
